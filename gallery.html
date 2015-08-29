@@ -1,0 +1,424 @@
+<!DOCTYPE html><!--[if IE 8]>
+<html lang="en-US" class="no-js lt-ie9">
+<![endif]-->
+<!--[if IE 9]>
+<html lang="en-US" class="no-js ie9">
+<![endif]-->
+<html lang="" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="web/image/pngIllegal return statement">
+        <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+        <title>Take4Free</title>
+        <meta name="description">
+        <meta name="keywords">
+        <meta name="copyright">
+        <link rel="stylesheet" href="css/vendor.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+        <script src="scripts/vendor.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.select2').select2({
+                    minimumResultsForSearch: -1
+                });
+
+                if (!$(".mobile-form-header:visible").length) {
+                    $('#form-mobile').removeClass('collapse');
+                }
+
+                $(window).resize(function () {
+                    if (!$(".mobile-form-header:visible").length) {
+                        $('#form-mobile').removeClass('collapse');
+                    }
+                    else {
+                        $('#form-mobile').addClass('collapse');
+                    }
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <!-- Header-->
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1 class="logo__wr">
+                            <a href="index.html">
+                                <img src="img/logo.png" width="204" height="90" alt="logo.png" class="img-responsive">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="col-sm-4 col-sm-offset-4 header-links">
+                        <div class="soc-menu soc-menu_header">
+                            <ul>
+                                <li><a href=""> <i class="fa fa-twitter"></i></a></li>
+                                <li><a href=""> <i class="fa fa-dribbble"></i></a></li>
+                                <li><a href=""> <i class="fa fa-behance"></i></a></li>
+                                <li><a href=""> <i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="sign-in__links">
+                            <a href="">Sign In</a>
+                            <span class="separator">/</span>
+                            <a href="">Registration</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-search__wr">
+                <div class="container">
+                    <form action="" class="serch-form">
+                        <div class="row">
+                            <div class="col-md-6 search-control-wr">
+                                <div class="search-input-group">
+                                    <input type="text" placeholder="I’m looking for" class="form-control input-lg">
+                                    <div class="select-custom__wr select-custom__search-form select-categories">
+                                        <p class="js-select-custom-style form-control input-lg"></p>
+                                        <select name="" class="js-select-custom form-control input-lg">
+                                            <option value="">All Categories</option>
+                                            <option value="">Electronics</option>
+                                            <option value="">Furniture</option>
+                                            <option value="">Appliances</option>
+                                            <option value="">Cloth</option>
+                                            <option value="">Musical instruments</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 search-control-wr">
+                                <span class="search-label visible-md visible-lg">in</span>
+                                <div class="search-input-group">
+                                    <input type="text" placeholder="Postcode" class="form-control input-lg">
+                                    <div class="select-custom__wr select-custom__search-form">
+                                        <p class="js-select-custom-style form-control input-lg"></p>
+                                        <select name="" class="js-select-custom form-control input-lg">
+                                            <option value="0.0001">+ 0 miles</option>
+                                            <option value="0.25">+ 1/4 mile</option>
+                                            <option value="0.5">+ 1/2 mile</option>
+                                            <option value="0.0001">+ 0 miles</option>
+                                            <option value="0.25">+ 1/4 mile</option>
+                                            <option value="0.5">+ 1/2 mile</option>
+                                            <option value="0.0001">+ 0 miles</option>
+                                            <option value="0.25">+ 1/4 mile</option>
+                                            <option value="0.5">+ 1/2 mile</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-1">
+                                <button type="button" class="btn btn-lg btn-search btn-block">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- end Header-->
+        <!-- Main content-->
+        <main class="main-block">
+            <section class="filter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="min-section__title page-header2">47 ads for iPhone <span>in All Categories, Enfield, London</span></h3> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="filter-form">
+                                <div class="mobile-form-header visible-xs">
+                                    <a data-toggle="collapse" href="#form-mobile" aria-expanded="false" aria-controls="form-mobile">
+                                        Filter
+                                        <i class="fa fa-lg fa-chevron-down"></i>
+                                    </a>
+                                </div>
+                                <div class="collapse" id="form-mobile">
+                                    <form action="" method="get" class="form-inline">
+                                        <div class="form-group col-md-2 nopadding">
+                                            <select name="" class="select2">
+                                                <option value="">All Categories</option>
+                                                <option value="">Electronics</option>
+                                                <option value="">Furniture</option>
+                                                <option value="">Appliances</option>
+                                                <option value="">Cloth</option>
+                                                <option value="">Musical instruments</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group form-group-price">
+                                            <label for="price_min">Price</label>
+                                            <input type="text" class="form-control" id="price-min" placeholder="Min"/>
+                                            <span class="hidden-xs">-</span>
+                                            <input type="text" class="form-control" id="price-max" placeholder="Max"/>
+                                        </div>
+                                        <div class="form-group pull-right hidden-xs">
+                                            <ul class="clearfix js-list-btn-toggle">
+                                                <li class="active"><a href="#"><i class="fa fa-lg fa-th-large"></i></a></li>
+                                                <li class="list-inline-btn"><a href="#"><i class="fa fa-lg fa-list"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-group pull-right col-md-2 nopadding">
+                                            <select name="" class="select2">
+                                                <option value="">Most recent first</option>
+                                            </select>
+                                        </div>
+<!--                                         <div class="form-group visible-xs">
+                                            <ul class="clearfix js-list-btn-toggle">
+                                                <li class="active"><a href="#"><i class="fa fa-3x fa-th-large"></i></a></li>
+                                                <li class="list-inline-btn"><a href="#"><i class="fa fa-3x fa-list"></i></a></li>
+                                            </ul>
+                                        </div>
+ -->                                    <div class="form-group form-group-btn">
+                                            <button type="submit" class="btn btn-info btn-default">UPDATE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div data-animation="fadeIn" data-timeout="300" class="min-section__wr min-section__wr_other-bg more-from__wr revealOnScroll">
+                <section class="search-results">
+                    <div class="container">
+                        <div class="gallery gallery-md-inline row">
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-tall">
+                                    <div class="img" style="background-image:url(img/big-img-1.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-short first">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                                <div class="gallery-img img-short">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-tall">
+                                    <div class="img" style="background-image:url(img/big-img-1.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-short first">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>                                    
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                                <div class="gallery-img img-short">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-tall">
+                                    <div class="img" style="background-image:url(img/big-img-1.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 col-md-4 gallery-item">
+                                <div class="gallery-img img-short first">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>                                    
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                                <div class="gallery-img img-short">
+                                    <div class="img" style="background-image:url(img/img-m-2.jpg);"></div>
+                                    <div class="caption">
+                                        <div>
+                                            <h4><a href="#">Double Leather</a></h4>
+                                            <p>Lorem Ipsum dolor sit amet</p>
+                                        </div>
+                                    </div>
+                                    <a href="" class="see-offer-link">See Offer&nbsp;<i class="fa fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <nav class="text-center">
+                                <ul class="pagination pagination-lg">
+                                    <li class="prev disabled">
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-angle-left"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li class="next">
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- end main Content-->
+        <!-- Footer-->
+        <footer class="main-footer">
+            <div class="footer__top-search-wr">
+                <div class="footer__top-search-line"><span class="line-col green-line"></span><span class="line-col red-line"></span><span class="line-col blue-line"></span><span class="line-col yellow-line"></span><span class="line-col orange-line"></span></div>
+                <div class="container">
+                    <div class="top-search__title">Top searches</div>
+                    <div class="row footer__search-list">
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">Sofa</a></li>
+                            <li><a href="">Caravan</a></li>
+                            <li><a href="">Van</a></li>
+                            <li><a href="">Free</a></li>
+                        </ul>
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">Car</a></li>
+                            <li><a href="">House</a></li>
+                            <li><a href="">Furniture</a></li>
+                            <li><a href="">Wardrobe</a></li>
+                        </ul>
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">TV</a></li>
+                            <li><a href="">Flat</a></li>
+                            <li><a href="">Garden furniture</a></li>
+                            <li><a href="">Puppies</a></li>
+                        </ul>
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">Garden</a></li>
+                            <li><a href="">Golf</a></li>
+                            <li><a href="">Iphone</a></li>
+                            <li><a href="">Boat</a></li>
+                        </ul>
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">Kittens</a></li>
+                            <li><a href="">Puppies for sale</a></li>
+                            <li><a href="">Tools</a></li>
+                        </ul>
+                        <ul class="col-xs-6 col-sm-4 col-md-2">
+                            <li><a href="">Bed</a></li>
+                            <li><a href="">Lights</a></li>
+                            <li><a href="">Room</a></li>
+                            <li><a href="">Shed</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom-wr">
+                <div class="container">
+                    <div class="row footer__bottom-inner-wr">
+                        <div class="col-md-2 copyright-block__wr">
+                            <p class="copyright-block">© 2015 Take4Free</p>
+                        </div>
+                        <div class="col-md-10 footer-all-links__wr">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="footer-nav__wr">
+                                        <div class="row footer-nav__list">
+                                            <ul class="col-xs-6 col-sm-3">
+                                                <li><a href="">Furniture</a></li>
+                                                <li><a href="">Electronics</a></li>
+                                            </ul>
+                                            <ul class="col-xs-6 col-sm-3">
+                                                <li><a href="">Appliances</a></li>
+                                                <li><a href="">Musical instruments</a></li>
+                                            </ul>
+                                            <ul class="col-xs-6 col-sm-3">
+                                                <li><a href="">Sporting Goods</a></li>
+                                                <li><a href="">Toys & Entertainment</a></li>
+                                            </ul>
+                                            <ul class="col-xs-6 col-sm-3">
+                                                <li><a href="">Books</a></li>
+                                                <li><a href="">Other</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="soc-menu soc-menu_footer">
+                                        <ul>
+                                            <li><a href=""> <i class="fa fa-twitter"></i></a></li>
+                                            <li><a href=""> <i class="fa fa-dribbble"></i></a></li>
+                                            <li><a href=""> <i class="fa fa-behance"></i></a></li>
+                                            <li><a href=""> <i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end Footer-->
+    </body>
+</html>
